@@ -83,6 +83,8 @@ let unifi = UnmsAPI({
     * [.list_devices()](#UnmsAPI+list_devices) ⇒ <code>Promise</code>
     * [.list_logs(count, which)](#UnmsAPI+list_logs) ⇒ <code>Promise</code>
     * [.list_outages(count, which)](#UnmsAPI+list_outages) ⇒ <code>Promise</code>
+    * [.list_settings()](#UnmsAPI+list_settings) ⇒ <code>Promise</code>
+    * [.keepalive()](#UnmsAPI+keepalive) ⇒ <code>Promise</code>
 
 <a name="UnmsAPI+debugging"></a>
 
@@ -205,6 +207,32 @@ List outages
 | count | how many to return per page. default is 100000 |
 | which | page to return (default 1) |
 
+**Example**  
+```js
+unifi.list_outages()
+    .then(done => console.log('Success',done))
+    .catch(err => console.log('Error',err))
+```
+<a name="UnmsAPI+list_settings"></a>
+
+### unmsAPI.list\_settings() ⇒ <code>Promise</code>
+List settings
+
+**Kind**: instance method of [<code>UnmsAPI</code>](#UnmsAPI)  
+**Returns**: <code>Promise</code> - Promise  
+**Example**  
+```js
+unifi.list_outages()
+    .then(done => console.log('Success',done))
+    .catch(err => console.log('Error',err))
+```
+<a name="UnmsAPI+keepalive"></a>
+
+### unmsAPI.keepalive() ⇒ <code>Promise</code>
+Do keepalive
+
+**Kind**: instance method of [<code>UnmsAPI</code>](#UnmsAPI)  
+**Returns**: <code>Promise</code> - Promise  
 **Example**  
 ```js
 unifi.list_outages()
