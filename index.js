@@ -148,4 +148,27 @@ UnmsAPI.prototype.list_outages = function(count = 100000, page = 1) {
     return this.net.req('/v2.1/outages?count='+count+'&page='+page);
 };
 
+/**
+ * List settings
+ * @return {Promise} Promise
+ * @example unifi.list_outages()
+ *     .then(done => console.log('Success',done))
+ *     .catch(err => console.log('Error',err))
+ */
+UnmsAPI.prototype.list_settings = function() {
+    return this.net.req('/v2.1/nms/settings');
+};
+
+/**
+ * Do keepalive
+ * @return {Promise} Promise
+ * @example unifi.list_outages()
+ *     .then(done => console.log('Success',done))
+ *     .catch(err => console.log('Error',err))
+ */
+UnmsAPI.prototype.keepalive = function() {
+    return this.net.req('/v2.1/nms/keep-alive');
+};
+
+
 module.exports = UnmsAPI;
