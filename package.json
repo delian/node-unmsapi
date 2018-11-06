@@ -1,0 +1,43 @@
+{
+  "name": "node-unmsapi",
+  "version": "0.0.1",
+  "description": "Provides API to manage Ubiquiti UNMS Controller",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "readme": "jsdoc2md --template README.hbs --files index.js cloudapi.js > README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delian/node-unmsapi.git"
+  },
+  "keywords": [
+    "unms",
+    "ubiquiti"
+  ],
+  "author": "Delian Delchev",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/delian/node-unmsapi/issues"
+  },
+  "homepage": "https://github.com/delian/node-unmsapi#readme",
+  "devDependencies": {
+    "jsdoc-to-markdown": "^3.0.0"
+  },
+  "dependencies": {
+    "debug": "^2.6.0",
+    "merge": "^1.2.0",
+    "paco": "^0.4.0",
+    "pako": "^1.0.6",
+    "request": "^2.87.0",
+    "request-debug": "^0.2.0",
+    "uuid": "^3.0.1",
+    "ws": "^2.0.1"
+  },
+  "jshintConfig": {
+    "esversion": 6
+  },
+  "engines": {
+    "node": ">=4.1.0"
+  }
+}
